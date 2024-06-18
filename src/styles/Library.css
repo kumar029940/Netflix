@@ -1,0 +1,77 @@
+.netflix_image {
+    height: 25px;
+}
+
+h4 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.search {
+    color: white;
+}
+
+h1 {
+    color : white;
+}
+
+.face {
+    height: 29px;
+    border-radius: 0.2rem;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index:2;
+}
+
+.first_one {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 2rem;
+}
+
+.second_one {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 30rem;
+}
+
+.spider-man {
+    width: 100%;
+    position: absolute;
+    bottom: -7.5rem;
+    z-index: 1;
+    opacity: 90%;
+}
+
+.hence {
+    display: flex;
+    align-items: center;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1rem;
+    margin-left: 45px;
+    z-index: 2
+}
+
+.sy {
+    border-radius: 0.4rem;
+    height: 100px;
+}
+
+.shape {
+    display: flex;
+    gap: 0.4rem;
+}

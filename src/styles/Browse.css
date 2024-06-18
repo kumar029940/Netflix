@@ -1,0 +1,44 @@
+.Iam {
+  color: white;
+  font-size: 4rem;
+  margin-top: 200px;
+}
+
+.name {
+  color: gray;
+  position: absolute;
+  top: 500px;
+  margin-left: 50px;
+}
+
+.large {
+  height: 150px;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 300px;
+}
+
+.All_things {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.All_Profiles {
+  display: flex;
+  gap: 200px;
+  margin-right: 130px;
+}
+
+.larger1 {
+  border: 5px solid white;
+  border-color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.name1 {
+  color: white;
+  cursor: pointer;
+}
