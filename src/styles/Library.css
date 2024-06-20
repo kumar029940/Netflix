@@ -1,77 +1,116 @@
 .netflix_image {
-    height: 25px;
+  height: 25px;
 }
 
 h4 {
-    color: white;
+  color: white;
 }
 
 h3 {
-    color: white;
+  color: white;
 }
 
 .search {
-    color: white;
+  color: white;
 }
 
 h1 {
-    color : white;
+  color: white;
 }
 
 .face {
-    height: 29px;
-    border-radius: 0.2rem;
+  height: 29px;
+  border-radius: 0.2rem;
 }
 
 .align {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index:2;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
 }
 
 .first_one {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 2rem;
 }
 
 .second_one {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-left: 30rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 30rem;
 }
 
 .spider-man {
-    width: 100%;
-    position: absolute;
-    bottom: -7.5rem;
-    z-index: 1;
-    opacity: 90%;
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  z-index: 1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .hence {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .movies {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 1rem;
-    margin-left: 45px;
-    z-index: 2
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -23rem;
+  margin-left: 2px;
+  z-index: 2;
 }
 
 .sy {
-    border-radius: 0.4rem;
-    height: 100px;
+  border-radius: 0.4rem;
+  height: 100px;
 }
 
 .shape {
-    display: flex;
-    gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.move {
+  margin-left: 10px;
+}
+
+.search-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 220px;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.5s ease, opacity 0.5s ease;
+  padding-left: 10px;/* Space for the icon */
+  padding-top: 1px;
+  padding-bottom: 1px;
+  height: 30px;
+  border: 1px solid #ccc;
+  color: white;
+  border-color: white;
+  background-color: black;
+  border-style: solid;
+}
+
+.search-input.expanded {
+  width: 190px; /* Adjust this width as needed */
+  opacity: 65%;
+}
+
+
+.toggle-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
 }

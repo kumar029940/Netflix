@@ -1,5 +1,5 @@
 .slider-container {
-    margin: 20px;
+    margin-top: -1rem;
   }
   
   .slider-wrapper {
@@ -22,6 +22,8 @@
     min-width: 20%; /* 5 slides to show */
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
   }
   
   .slider-item img {
@@ -32,15 +34,9 @@
   }
   
   .slider-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   
-  .movie-title {
-    text-align: center;
-    margin-top: 10px;
-    color: red;
-    font-size: 16px;
-  }
   
   .slider-button {
     background: none;
@@ -65,4 +61,24 @@
   .slider-button.right {
     right: 0;
   }
-  
+
+  .add {
+    position: absolute;
+    z-index:3;
+    right: 20px;
+    top: 119px;
+    background-color: #282828;
+    color: #FFFFFF;
+    border-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    opacity: 50%;
+  }
+
+.add:hover {
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: #303030;
+  opacity: 100%;
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import '../App.css'
+import '../styles/App.css'
 import { descriptionList } from "../data1.js";
 import home_screen from "../images/home_screen.jpg";
 import netflix_icon from "../images/netflix_icon.png";

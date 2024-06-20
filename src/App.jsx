@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import Home from "./components/Home";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Browse from "./components/Browse";
 import Library from "./components/Library";
+import MyList from "./components/MyList";
 
 export default function App() {
   const [index, setIndex] = useState(null);
@@ -33,6 +34,12 @@ export default function App() {
       path = '/library'
       element = {
         <Library />
+      }
+      />
+      <Route
+      path = '/mylist'
+      element = {
+        <MyList />
       }
       />
     </Routes>

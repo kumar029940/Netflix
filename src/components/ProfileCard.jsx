@@ -9,7 +9,7 @@ const ProfileCard = ({ src, name }) => {
       onMouseLeave={() => setHover(false)}
     >
       <img
-        className={`large larger ${hover ? "larger1" : ""}`}
+        className={`large ${hover ? "larger1" : ""}`}
         src={src}
         alt="profile_1"
       />
