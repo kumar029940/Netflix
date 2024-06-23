@@ -11,7 +11,7 @@ const ProfileCard = ({ src, name }) => {
       <img
         className={`large ${hover ? "larger1" : ""}`}
         src={src}
-        alt="profile_1"
+        alt="profile"
       />
       <div className={`name ${hover ? "name1" : ""}`}>{name}</div>
     </div>

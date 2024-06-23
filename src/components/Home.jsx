@@ -5,11 +5,17 @@ import { descriptionList } from "../data1.js";
 import home_screen from "../images/home_screen.jpg";
 import netflix_icon from "../images/netflix_icon.png";
 
-
-function Home({index, handleNextIndex}) {
+function Home() {
 
   const [input, setInput] = useState('')
   const [redirect, setRedirect] = useState(false)
+  const [index, setIndex] = useState(null);
+
+  function handleNextIndex(selectedIndex) {
+    setIndex((prevIndex) =>
+      prevIndex === selectedIndex ? null : selectedIndex
+    );
+  }
 
   const handleInput = (e) => {
     if(e.target.value.trim().length> 0 && e.target.value.includes('@gmail.com')){

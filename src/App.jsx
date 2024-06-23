@@ -7,21 +7,15 @@ import Library from "./components/Library";
 import MyList from "./components/MyList";
 
 export default function App() {
-  const [index, setIndex] = useState(null);
+  
   const [myFav, setMyFav] = useState([]);
-
-  function handleNextIndex(selectedIndex) {
-    setIndex((prevIndex) =>
-      prevIndex === selectedIndex ? null : selectedIndex
-    );
-  }
 
   return (
     <Router>
       <Routes>
         <Route
           path="/"
-          element={<Home index={index} handleNextIndex={handleNextIndex} />}
+          element={<Home/>}
         />
         <Route path="/browse" element={<Browse />} />
         <Route
