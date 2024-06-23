@@ -44,7 +44,7 @@ function Library({ myFav, setMyFav }) {
       <div>
         {data.length > 0 && (
           <div>
-            {sound===true ? (<video className="spider-man" autoPlay loop playsInline>
+            {sound === true ? (<video className="spider-man" autoPlay loop playsInline>
             <source src={data[index].trailer} type="video/mp4" />
           </video>): (
               <video className="spider-man" autoPlay loop muted playsInline>

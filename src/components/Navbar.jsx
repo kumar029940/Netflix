@@ -8,7 +8,9 @@ function Navbar() {
   return (
     <div>
         <div className="first_one">
+          <Link to = '/'>
           <img className="netflix_image" src={netflix_icon} alt="netflix" />
+          </Link>
           <Link className = 'o' to = '/library'>
           <h4>Home</h4>
           </Link>

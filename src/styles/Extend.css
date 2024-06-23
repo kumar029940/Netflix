@@ -1,0 +1,30 @@
+.hb {
+    height: 150px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.hb:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.sound2 {
+    position: absolute;
+    z-index:3;
+    right: 70px;
+    top: 125px;
+    color: #FFFFFF;
+    border-color: white;
+    height: 40px;
+    width: 40px;
+    opacity: 50%;
+}
+
+.sound2:hover {
+    cursor: pointer;
+    opacity: 100%;
+  }

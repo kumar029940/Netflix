@@ -53,6 +53,7 @@ export default function NetflixSlider({ sectionList, myFav, setMyFav }) {
                   image = {movie.image}
                   title = {movie.title}
                   all = {movie}
+                  trailer = {movie.trailer}
                   />
                   </div>
                 ))

@@ -23,7 +23,7 @@
     padding: 10px;
     box-sizing: border-box;
     position: relative;
-    z-index: 2;
+    z-index: 1;
   }
   
   .slider-item img {
