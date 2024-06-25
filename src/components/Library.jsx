@@ -4,15 +4,15 @@ import NetflixSlider from "./NetflixSlider";
 import { sectionList } from "../data2.js";
 import Navbar from "./Navbar";
 import Navbar2 from "./Navbar2";
-import VolumeUpIcon from '@mui/icons-material/VolumeUp';
-import VolumeOffIcon from '@mui/icons-material/VolumeOff';
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 
 function Library({ myFav, setMyFav }) {
   const [filterMovies, setFilterMovies] = useState([]);
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [index, setIndex] = useState(0);
-  const [sound, setSound] = useState(false)
+  const [sound, setSound] = useState(false);
 
   const fetchData = () => {
     setData(sectionList);
@@ -32,29 +32,31 @@ function Library({ myFav, setMyFav }) {
   }, [search, data]);
 
   const handleSound = () => {
-    setSound(!sound)
-  }
+    setSound(!sound);
+  };
 
   return (
     <div>
-      <div className='align'>
+      <div className="align">
         <Navbar />
         <Navbar2 search={search} setSearch={setSearch} />
       </div>
       <div>
         {data.length > 0 && (
           <div>
-            {sound === true ? (<video className="spider-man" autoPlay loop playsInline>
-            <source src={data[index].trailer} type="video/mp4" />
-          </video>): (
-              <video className="spider-man" autoPlay loop muted playsInline>
-              <source src={data[index].trailer} type="video/mp4" />
+            {sound === true ? (
+              <video className="spider-man" autoPlay loop playsInline>
+                <source src={data[index].trailer} type="video/mp4" />
               </video>
-          )}
+            ) : (
+              <video className="spider-man" autoPlay loop muted playsInline>
+                <source src={data[index].trailer} type="video/mp4" />
+              </video>
+            )}
 
-          <div className = 'movable' onClick = {handleSound}>
-            {sound ? <VolumeUpIcon/> : <VolumeOffIcon/>}
-          </div>
+            <div className="movable" onClick={handleSound}>
+              {sound ? <VolumeUpIcon /> : <VolumeOffIcon />}
+            </div>
           </div>
         )}
       </div>

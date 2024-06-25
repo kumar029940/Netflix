@@ -8,7 +8,8 @@
   color: gray;
   position: absolute;
   top: 500px;
-  margin-left: 50px;
+  margin-left: 13px;
+  cursor: pointer;
 }
 
 .large {
@@ -28,7 +29,6 @@
 .All_Profiles {
   display: flex;
   gap: 200px;
-  margin-right: 130px;
 }
 
 .larger1 {
@@ -41,4 +41,68 @@
 .name1 {
   color: white;
   cursor: pointer;
+}
+
+.plus {
+  font-size: 100px !important;
+  height: 100px !important;
+  color: white; 
+  cursor: pointer;
+}
+
+.myProfile {
+  position: absolute;
+  top: 350px;
+  left: 796px;
+  color: white;
+  transform: translate(-50%, -50%);
+  background-color: #141414;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.makeitLarge {
+  height: 100px;
+}
+
+.input_Profile {
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.response {
+  border: none;
+  cursor: pointer;
+}
+
+.profile_image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.continue_cancel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small {
+  font-size: 30px;
+}
+
+.add_profile {
+  color: white;
+}
+
+.all_things{
+  display: flex;
+  gap: 10px;
+}
+
+.color_vb{
+  color: white;
 }
