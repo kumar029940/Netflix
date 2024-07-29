@@ -2,7 +2,7 @@ import trailer_1 from './images/trailer_1.mp4'
 import trailer_2 from './images/trailer_2.mp4'
 import trailer_3 from './images/trailer_3.mp4'
 import trailer_4 from './images/trailer_4.mp4'
-import trailer_5 from './images/trailer_5.mp4'
+import trailer_5 from './images/trailer_5.mp4' 
 
 export const sectionList = [{
     id:0,

@@ -106,3 +106,30 @@
 .color_vb{
   color: white;
 }
+
+.name_profile_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.delete_Edit {
+  display: flex;
+  gap: 10px;
+}
+
+.delete_profile {
+  cursor: pointer;
+}
+
+.Edit_profile {
+  cursor: pointer;
+}
+
+.input_Profile_save {
+  color: white;
+  background-color: gray;
+  border: none;
+  width: 96px;
+}

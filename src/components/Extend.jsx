@@ -51,7 +51,7 @@ const [sound, setSound] = useState(false)
                         {myFav.find((item) => item.id === id) ? (
                           '-'
                         ) : (
-                          <AddIcon />
+                          <AddIcon />           
                         )}
                       </button>
                        <div onClick = {handleSound} className = 'sound2'>

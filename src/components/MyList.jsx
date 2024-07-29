@@ -22,7 +22,6 @@ function MyList({ myFav, setMyFav }) {
               image = {collection.image}
               title = {collection.title}
               all = {collection}
-              trailer = {collection.trailer}
               />
               </div>
             );

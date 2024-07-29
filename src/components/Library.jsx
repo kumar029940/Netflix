@@ -6,9 +6,11 @@ import Navbar from "./Navbar";
 import Navbar2 from "./Navbar2";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import Suggestion from "./Suggestion";
 
 function Library({ myFav, setMyFav }) {
   const [filterMovies, setFilterMovies] = useState([]);
+  const [searchMovies, setSearchMovies] = useState([]);
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [index, setIndex] = useState(0);
@@ -31,6 +33,18 @@ function Library({ myFav, setMyFav }) {
     );
   }, [search, data]);
 
+  useEffect(() => {
+    if (search.trim().length > 0) {
+      setSearchMovies(
+        data.filter((movie) =>
+          movie.title.toLowerCase().includes(search.toLowerCase())
+        )
+      );
+    } else {
+      setSearchMovies([]);
+    }
+  }, [search]);
+
   const handleSound = () => {
     setSound(!sound);
   };
@@ -39,7 +53,10 @@ function Library({ myFav, setMyFav }) {
     <div>
       <div className="align">
         <Navbar />
+        <div className = 'search_suggestions'>
         <Navbar2 search={search} setSearch={setSearch} />
+        <Suggestion searchMovies={searchMovies} />
+        </div> 
       </div>
       <div>
         {data.length > 0 && (

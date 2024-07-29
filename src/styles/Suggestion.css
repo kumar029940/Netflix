@@ -1,0 +1,9 @@
+.searchMovie {
+    color: white;
+}
+
+.search_suggestions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

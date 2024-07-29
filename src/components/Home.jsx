@@ -7,21 +7,12 @@ import netflix_icon from "../images/netflix_icon.png";
 
 function Home() {
 
-  const [input, setInput] = useState('')
-  const [redirect, setRedirect] = useState(false)
   const [index, setIndex] = useState(null);
 
   function handleNextIndex(selectedIndex) {
     setIndex((prevIndex) =>
       prevIndex === selectedIndex ? null : selectedIndex
     );
-  }
-
-  const handleInput = (e) => {
-    if(e.target.value.trim().length> 0 && e.target.value.includes('@gmail.com')){
-      setRedirect(true)
-    }
-    setInput(e.target.value)
   }
 
 
@@ -51,28 +42,14 @@ function Home() {
             </h1>
             <h3 className="white margin2">Watch anywhere. Cancel anytime</h3>
             <h3 className="white margin1">
-              Ready to watch? Enter your email to create or restart your
-              membership.
+              Ready to watch? Click on Get Started
             </h3>
             <div className="flex">
-              <div>
-                <input
-                  className="input_email"
-                  type="email"
-                  value = {input}
-                  onChange = {handleInput}
-                  placeholder="Email address"
-                />
               </div>
-              {redirect === true  ? (<Link to = '/Browse'>
-              <button  className="membership button1">Get Started!</button>
-              </Link>) : (
-                <Link to = '/'>
+              <Link to = '/Browse'>
                 <button className="membership button1">Get Started!</button>
                 </Link>
-              )}
             </div>
-          </div>
         </div>
 
         <div className="Answer">
